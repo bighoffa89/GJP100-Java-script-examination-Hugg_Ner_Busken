@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta name="author" content="Mikael Hoffsten" />
+    <meta name="description" content="Examinationsuppgift-java-script" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="spel wrapper">
+      <header>
+        <h1>Hugg Ner Busken!</h1>
+        <button class="knappInformation">Information</button>
+        <button class="inställningsknapp">Inställningar</button>
+      </header>
+      <aside class="information">
+        <h2>Information och Regler</h2>
+        <p>Tryck på start knappen för att starta.</p>
+        <p>Klicka på buskarna som dycker upp för att ta bort dem.</p>
+        <p>För varje buske du hugger ner får du ett poäng.</p>
+        <p>Hur många poäng får du innan tiden går ut?</p>
+      </aside>
+      <aside class="instellningar">
+        <h2>Svårighetsgrad</h2>
+        <button class="latt">Lätt</button>
+        <button class="normal">Normal</button>
+        <button class="svor">Svår</button>
+        <h2>Spelets längd</h2>
+        <button class="sek10">10 sek</button>
+        <button class="sek30">30 sek</button>
+        <button class="sek60">1 min</button>
+      </aside>
+      <main>
+        <section>
+          <div class="poängTavla">
+            <h3>Poäng</h3>
+            <div class="poäng">0</div>
+          </div>
+          <div class="nerRäknare"></div>
+          <div class="tidTavla">
+            <h3>Tid kvar</h3>
+            <div class="tidKvar">0</div>
+          </div>
+        </section>
+        <div class="startknappsplats">
+          <button class="KnappSrata">Starta</button>
+        </div>
+        <div class="SpelPlan">
+          <div class="jord jord1">
+            <div class="buske"></div>
+          </div>
+          <div class="jord jord2">
+            <div class="buske"></div>
+          </div>
+          <div class="jord jord3">
+            <div class="buske"></div>
+          </div>
+          <div class="jord jord4">
+            <div class="buske"></div>
+          </div>
+          <div class="jord jord5">
+            <div class="buske"></div>
+          </div>
+          <div class="jord jord6">
+            <div class="buske"></div>
+          </div>
+        </div>
+        <audio id="spelHuggBuske" src="sonds/CoopWood.wav"></audio>
+        <audio id="startAndStopp" src="sonds/startAndStopp.mp3"></audio>
+      </main>
+      <footer>
+        <p>Mikael Hoffsten</p>
+      </footer>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

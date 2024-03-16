@@ -1,0 +1,144 @@
+* {
+}
+
+body {
+  font-family: "open sans";
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgba(8, 86, 23, 0.616);
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 9rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+header button {
+  width: 200px;
+  height: 50px;
+  border-radius: 1rem;
+}
+
+aside {
+  display: none;
+  text-align: center;
+  background-color: lightgreen;
+  margin: 1rem 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+aside button {
+  width: 100px;
+  height: 25px;
+  border-radius: 1rem;
+  background-color: lightgray;
+}
+.sek10,
+.normal {
+  background-color: gray;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.poängTavla,
+.tidTavla {
+  margin: 0 auto;
+}
+.nerRäknare {
+  font-size: 8rem;
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  margin-top: 1rem;
+  color: red;
+}
+.poäng,
+.tidKvar {
+  background: rgba(25, 23, 23, 0.2);
+  line-height: 1;
+  border-radius: 1rem;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+}
+
+.tidKvar {
+  color: rgb(174, 42, 42);
+}
+.startknappsplats {
+  height: 50px;
+  margin-top: 1rem;
+}
+
+.KnappSrata {
+  width: 200px;
+  height: 50px;
+  border-radius: 1rem;
+  margin-left: 10rem;
+}
+/* hämtat delar från kurs */
+.SpelPlan {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  border: 2px solid black;
+  border-radius: 1rem;
+  justify-content: space-between;
+  background-color: rgb(108, 237, 108);
+}
+/* hämtat delar från kurs */
+.jord {
+  flex: 1 0 30%;
+  overflow: hidden;
+  position: relative;
+  margin: 0.5rem;
+}
+/* hämtat delar från kurs */
+.jord:after {
+  display: block;
+  background: url("imges/jord.png") bottom center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+/* hämtat delar från kurs */
+.buske {
+  background: url("imges/buske.png") bottom center no-repeat;
+  background-size: 70%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+/* hämtat delar från kurs */
+.jord.up .buske {
+  top: 0;
+}
